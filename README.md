@@ -19,13 +19,13 @@ Materi ini dirancang khusus untuk **mahasiswa peternakan** yang tidak memiliki l
 
 ## 📋 Daftar Pertemuan
 
-| Pertemuan | Topik                                        | Dosen                  | File                                                                                               |
+| Pertemuan | Topik                                        | Dosen (Kelas A / B)    | File                                                                                               |
 | --------- | -------------------------------------------- | ---------------------- | -------------------------------------------------------------------------------------------------- |
 | 1         | Pengantar IoT dan Penerapannya di Peternakan | Julinda / Anhar        | [Pertemuan-1-Pengantar-IoT-Peternakan.md](Pertemuan-1-Pengantar-IoT-Peternakan.md)                 |
-| 2         | Perangkat IoT dalam Peternakan               | Anton Prafanto         | [Pertemuan-2-Perangkat-IoT.md](Pertemuan-2-Perangkat-IoT.md)                                       |
-| 3         | Sensor Lingkungan Kandang                    | Anton Prafanto         | [Pertemuan-3-Sensor-Lingkungan-Kandang.md](Pertemuan-3-Sensor-Lingkungan-Kandang.md)               |
-| 4         | Aktuator dan Mikrokontroler                  | Anton Prafanto         | [Pertemuan-4-Aktuator-dan-Mikrokontroler.md](Pertemuan-4-Aktuator-dan-Mikrokontroler.md)           |
-| 5         | Sistem Komunikasi IoT                        | Anton Prafanto         | [Pertemuan-5-Sistem-Komunikasi-IoT.md](Pertemuan-5-Sistem-Komunikasi-IoT.md)                       |
+| 2         | Perangkat IoT dalam Peternakan               | Anton Prafanto / Anhar | [Pertemuan-2-Perangkat-IoT.md](Pertemuan-2-Perangkat-IoT.md)                                       |
+| 3         | Sensor Lingkungan Kandang                    | Anton Prafanto / Anhar | [Pertemuan-3-Sensor-Lingkungan-Kandang.md](Pertemuan-3-Sensor-Lingkungan-Kandang.md)               |
+| 4         | Aktuator dan Mikrokontroler                  | Anton Prafanto / Anhar | [Pertemuan-4-Aktuator-dan-Mikrokontroler.md](Pertemuan-4-Aktuator-dan-Mikrokontroler.md)           |
+| 5         | Sistem Komunikasi IoT                        | Anton Prafanto / Anhar | [Pertemuan-5-Sistem-Komunikasi-IoT.md](Pertemuan-5-Sistem-Komunikasi-IoT.md)                       |
 | 6         | Monitoring Kandang (Dashboard)               | Julinda / Yusuf        | [Pertemuan-6-Monitoring-Kandang.md](Pertemuan-6-Monitoring-Kandang.md)                             |
 | 7         | Studi Kasus IoT pada Kandang                 | Julinda / Yusuf        | [Pertemuan-7-Studi-Kasus-IoT.md](Pertemuan-7-Studi-Kasus-IoT.md)                                   |
 | 8         | **UTS (Ujian Tengah Semester)**              | -                      | -                                                                                                  |
@@ -141,8 +141,9 @@ Level 4: Karir - Industri / Entrepreneur / Akademik
 
 | Dosen                  | Pertemuan          | Fokus                            |
 | ---------------------- | ------------------ | -------------------------------- |
-| Julinda / Anhar        | P1, P6, P7         | Pengenalan & Studi Kasus         |
-| Anton Prafanto         | P2, P3, P4, P5     | Hardware & Komunikasi            |
+| Julinda / Anhar        | P1                 | Pengenalan IoT                   |
+| Anton Prafanto / Anhar | P2, P3, P4, P5     | Hardware & Komunikasi            |
+| Julinda / Yusuf        | P6, P7             | Monitoring & Studi Kasus         |
 | Novemia / Carenina     | P9, P10, P11       | AI & Machine Learning            |
 | Nurul Fajrih / Rizkuna | P12, P13, P14, P15 | Smart Poultry & Circular Farming |
 
