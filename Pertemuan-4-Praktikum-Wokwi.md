@@ -126,6 +126,8 @@ Sambungkan sesuai diagram koneksi di atas. Pastikan:
 - LED Merah → GPIO 5 → Resistor → GND
 - Buzzer (+) → GPIO 18, Buzzer (–) → GND
 
+> 💡 **Cara cepat (diagram.json):** Klik tab **`diagram.json`** di Wokwi → hapus isi yang ada → copy-paste isi file [`wokwi-praktik1/diagram.json`](wokwi-praktik1/diagram.json) dari repository → semua komponen dan kabel otomatis terpasang!
+
 #### Langkah 5: Copy-Paste Kode
 
 ### 💻 Kode Program (Copy-Paste ke Wokwi)
@@ -364,6 +366,8 @@ Sambungkan sesuai diagram di atas. Perhatikan:
 - Setiap tombol: satu kaki → GPIO, kaki lain → 3.3V, dengan resistor 10kΩ dari GPIO ke GND (pull-down)
 
 > ⚠️ **Catatan Wokwi untuk Tombol:** Di Wokwi, saat Anda klik tombol **Pushbutton**, tombol aktif selama diklik dan **langsung melepas** saat kursor dilepas. Ini normal dan mensimulasikan perilaku tombol fisik. Kode menggunakan `INPUT_PULLDOWN` sehingga kondisi **tombol ditekan = HIGH**, tombol bebas = LOW.
+
+> 💡 **Cara cepat (diagram.json):** Klik tab **`diagram.json`** di Wokwi → hapus isi yang ada → copy-paste isi file [`wokwi-praktik2/diagram.json`](wokwi-praktik2/diagram.json) dari repository → semua komponen dan kabel otomatis terpasang!
 
 #### Langkah 5: Copy-Paste Kode
 

@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "author": "IoT Peternakan - Universitas Mulawarman",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 10,
+      "left": 0,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-dht22",
+      "id": "dht1",
+      "top": -20,
+      "left": 250,
+      "attrs": { "temperature": "28", "humidity": "65" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 100,
+      "left": 230,
+      "attrs": { "value": "220" },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 80,
+      "left": 300,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": 160,
+      "left": 230,
+      "attrs": { "value": "220" },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led2",
+      "top": 140,
+      "left": 300,
+      "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": 220,
+      "left": 230,
+      "attrs": { "value": "220" },
+      "rotate": 90
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led3",
+      "top": 200,
+      "left": 300,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": 270,
+      "left": 260,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    ["esp:3V3", "dht1:VCC", "red", ["h20"]],
+    ["esp:GND.1", "dht1:GND", "black", ["h20"]],
+    ["esp:D15", "dht1:SDA", "green", ["h20"]],
+
+    ["esp:D2", "r1:1", "green", []],
+    ["r1:2", "led1:A", "green", []],
+    ["led1:C", "esp:GND.1", "black", ["v30", "h-200"]],
+
+    ["esp:D4", "r2:1", "blue", []],
+    ["r2:2", "led2:A", "blue", []],
+    ["led2:C", "esp:GND.1", "black", ["v40", "h-200"]],
+
+    ["esp:D5", "r3:1", "red", []],
+    ["r3:2", "led3:A", "red", []],
+    ["led3:C", "esp:GND.1", "black", ["v50", "h-200"]],
+
+    ["esp:D18", "bz1:1", "orange", []],
+    ["bz1:2", "esp:GND.1", "black", ["v60", "h-220"]]
+  ]
+}
