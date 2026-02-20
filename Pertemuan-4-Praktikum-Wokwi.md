@@ -652,14 +652,15 @@ void loop() {
 
 #### Langkah 2: ⚠️ Install Library (WAJIB!)
 
-> 🚨 **Jangan dilewatkan!** Praktik 3 menggunakan 2 library eksternal. Keduanya harus diinstall sebelum kode bisa berjalan.
+> 🚨 **Jangan dilewatkan!** Praktik 3 menggunakan **3 library eksternal**. Ketiganya harus diinstall sebelum kode bisa berjalan.
 
 1. Di bagian atas Wokwi, klik tab **"Library Manager"**
 2. Klik tombol **"+" biru** (pojok kanan atas)
 3. Cari dan install **`ESP32Servo`** → klik Install
 4. Klik **"+"** lagi, cari dan install **`DHT sensor library for ESPx`** → klik Install
+5. Klik **"+"** lagi, cari dan install **`LiquidCrystal I2C`** → klik Install
 
-> 💡 Setelah install, kedua library akan muncul di daftar **"Installed Libraries"** di tab Library Manager.
+> 💡 Setelah install, ketiga library akan muncul di daftar **"Installed Libraries"**: `ESP32Servo`, `DHT sensor library for ESPx`, `LiquidCrystal I2C`.
 
 #### Langkah 3: Tambahkan Semua Komponen
 
@@ -1072,4 +1073,3 @@ Struktur video yang diharapkan:
 _Materi ini disusun untuk Mata Kuliah Internet of Things (IoT)_  
 _Program Studi Peternakan — Universitas Mulawarman_  
 _Self-Paced Learning — Pertemuan 4 — Semester Genap 2025/2026_
-
