@@ -378,7 +378,20 @@ Isi tabel berikut bersama kelompok, lalu fotret/screenshot sebagai dokumentasi:
 
 1. Buka **[wokwi.com](https://wokwi.com)** → **New Project** → **ESP32**
 
-#### Langkah 2: Tambahkan Komponen
+#### Langkah 2: ⚠️ Install Library ESP32Servo (WAJIB!)
+
+> 🚨 **Jangan dilewatkan!** Tanpa langkah ini, kode tidak akan bisa dikompilasi dan akan muncul error **"ESP32Servo.h: No such file or directory"**.
+
+1. Di panel kiri Wokwi, klik ikon **"Project Files"** (ikon folder/dokumen)
+2. Klik tombol **"+"** untuk buat file baru
+3. Beri nama file: **`libraries.txt`**
+4. Isi file tersebut dengan satu baris:
+   ```
+   ESP32Servo
+   ```
+5. Simpan → Wokwi otomatis mengunduh library
+
+#### Langkah 3: Tambahkan Komponen
 
 1. Klik **"+"** lalu tambahkan:
    - **Servo** (ketik "servo" → pilih **"Servo"**)
@@ -387,14 +400,16 @@ Isi tabel berikut bersama kelompok, lalu fotret/screenshot sebagai dokumentasi:
    - **LED** × 2 buah (Hijau dan Merah)
    - **Resistor** × 4 buah (2 buah **220Ω** untuk LED, 2 buah **10kΩ** untuk tombol)
 
-#### Langkah 3: Sambungkan Kabel
+#### Langkah 4: Sambungkan Kabel
 
 Sambungkan sesuai diagram di atas. Perhatikan:
 
 - Kabel oranye/sinyal servo → GPIO 13
 - Setiap tombol: satu kaki → GPIO, kaki lain → 3.3V, dengan resistor 10kΩ dari GPIO ke GND (pull-down)
 
-#### Langkah 4: Copy-Paste Kode
+> ⚠️ **Catatan Wokwi untuk Tombol:** Di Wokwi, saat Anda klik tombol **Pushbutton**, tombol aktif selama diklik dan **langsung melepas** saat kursor dilepas. Ini normal dan mensimulasikan perilaku tombol fisik. Kode menggunakan `INPUT_PULLDOWN` sehingga kondisi **tombol ditekan = HIGH**, tombol bebas = LOW.
+
+#### Langkah 5: Copy-Paste Kode
 
 ### 💻 Kode Program (Copy-Paste ke Wokwi)
 
@@ -679,7 +694,20 @@ void loop() {
 
 1. Buka **[wokwi.com](https://wokwi.com)** → **New Project** → **ESP32**
 
-#### Langkah 2: Tambahkan Semua Komponen
+#### Langkah 2: ⚠️ Install Library (WAJIB!)
+
+> 🚨 **Praktik 3 menggunakan 2 library eksternal.** Keduanya harus ditambahkan sebelum kode bisa berjalan.
+
+1. Di Wokwi, buka tab **Code** → klik **"+"** di bagian **"Project Files"**
+2. Buat file bernama **`libraries.txt`**
+3. Isi dengan dua baris berikut:
+   ```
+   ESP32Servo
+   LiquidCrystal I2C
+   ```
+4. Save → Wokwi otomatis mengunduh kedua library tersebut
+
+#### Langkah 3: Tambahkan Semua Komponen
 
 1. Klik **"+"** dan tambahkan secara berurutan:
    - **DHT22**
@@ -689,11 +717,11 @@ void loop() {
    - **Resistor** × 3 buah (220Ω)
    - **Buzzer**
 
-#### Langkah 3: Sambungkan Semua Kabel
+#### Langkah 4: Sambungkan Semua Kabel
 
 Ikuti diagram koneksi di atas dengan teliti. Kerja sama dalam kelompok: satu orang menyambungkan sensor, satu orang aktuator, satu orang LCD.
 
-#### Langkah 4: Copy-Paste Kode
+#### Langkah 5: Copy-Paste Kode
 
 ### 💻 Kode Program (Copy-Paste ke Wokwi)
 
@@ -1022,13 +1050,15 @@ Struktur video yang diharapkan:
 
 ### Jika Ada Kendala
 
-| Masalah                         | Solusi                                                       |
-| ------------------------------- | ------------------------------------------------------------ |
-| Kode error / tidak bisa compile | Periksa tanda kurung `{}` dan titik koma `;` di setiap baris |
-| Sensor tidak terbaca            | Periksa sambungan VCC, GND, dan DATA pin                     |
-| Servo tidak bergerak            | Pastikan pin PWM benar (GPIO 13) dan power dari 5V/VIN       |
-| LCD tidak muncul tulisan        | Cek alamat I2C (0x27), pastikan SDA=GPIO21 dan SCL=GPIO22    |
-| Wokwi lambat / lag              | Tutup tab browser lain, gunakan Chrome/Edge terbaru          |
+| Masalah                                       | Solusi                                                                        |
+| --------------------------------------------- | ----------------------------------------------------------------------------- |
+| **"ESP32Servo.h: No such file or directory"** | Buat file `libraries.txt` di Wokwi, isi dengan `ESP32Servo` (lihat Langkah 2) |
+| **"LiquidCrystal_I2C.h: No such file"**       | Tambahkan `LiquidCrystal I2C` di `libraries.txt` (Praktik 3)                  |
+| Kode error / tidak bisa compile               | Periksa tanda kurung `{}` dan titik koma `;` di setiap baris                  |
+| Sensor tidak terbaca                          | Periksa sambungan VCC, GND, dan DATA pin                                      |
+| Servo tidak bergerak                          | Pastikan pin PWM benar (GPIO 13) dan power dari 5V/VIN                        |
+| LCD tidak muncul tulisan                      | Cek alamat I2C (0x27), pastikan SDA=GPIO21 dan SCL=GPIO22                     |
+| Wokwi lambat / lag                            | Tutup tab browser lain, gunakan Chrome/Edge terbaru                           |
 
 ---
 
