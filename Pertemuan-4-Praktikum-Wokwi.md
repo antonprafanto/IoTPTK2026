@@ -176,9 +176,9 @@ DHTesp sensorSuhu;
 // Fungsi nyalakan alarm putus-putus
 void bunyikanAlarm() {
   for (int i = 0; i < 3; i++) {
-    digitalWrite(PIN_ALARM, HIGH);
+    tone(PIN_ALARM, 900);  // Aktifkan buzzer frekuensi 900Hz
     delay(150);
-    digitalWrite(PIN_ALARM, LOW);
+    tone(PIN_ALARM, 0);    // Matikan buzzer
     delay(150);
   }
 }
@@ -192,7 +192,7 @@ void setup() {
   pinMode(PIN_AMAN,    OUTPUT);
   pinMode(PIN_KIPAS_1, OUTPUT);
   pinMode(PIN_KIPAS_2, OUTPUT);
-  pinMode(PIN_ALARM,   OUTPUT);
+  // Catatan: PIN_ALARM (buzzer) tidak perlu pinMode saat menggunakan tone()
 
   sensorSuhu.setup(PIN_SENSOR, DHTesp::DHT22);
 
@@ -771,8 +771,8 @@ int sudutVentilasi = VENTILASI_TUTUP;  // Posisi servo saat ini
 // Fungsi alarm
 void bunyikanAlarm(int kali) {
   for (int i = 0; i < kali; i++) {
-    digitalWrite(PIN_BUZZER, HIGH); delay(200);
-    digitalWrite(PIN_BUZZER, LOW);  delay(100);
+    tone(PIN_BUZZER, 900); delay(200);  // Aktifkan buzzer 900Hz
+    tone(PIN_BUZZER, 0);   delay(100);  // Matikan buzzer
   }
 }
 
@@ -829,13 +829,13 @@ void setup() {
   pinMode(PIN_LED_AMAN,  OUTPUT);
   pinMode(PIN_LED_KIPAS, OUTPUT);
   pinMode(PIN_LED_ALARM, OUTPUT);
-  pinMode(PIN_BUZZER,    OUTPUT);
+  // Catatan: PIN_BUZZER tidak perlu pinMode saat menggunakan tone()
 
-  // Semua mati terlebih dahulu
+  // Semua LED mati terlebih dahulu
   digitalWrite(PIN_LED_AMAN,  LOW);
   digitalWrite(PIN_LED_KIPAS, LOW);
   digitalWrite(PIN_LED_ALARM, LOW);
-  digitalWrite(PIN_BUZZER,    LOW);
+  tone(PIN_BUZZER, 0);   // Pastikan buzzer mati
 
   delay(2000);
   Serial.println("✅ Semua komponen siap!");
@@ -892,7 +892,7 @@ void loop() {
     digitalWrite(PIN_LED_KIPAS, HIGH);      // Kipas ON
     digitalWrite(PIN_LED_ALARM, LOW);
     aturVentilasi(VENTILASI_SETENGAH);      // Ventilasi sebagian
-    digitalWrite(PIN_BUZZER, LOW);
+    tone(PIN_BUZZER, 0);   // Buzzer mati
     updateLCD(suhu, kelembaban, pesanWaspada);
 
   } else {
@@ -903,7 +903,7 @@ void loop() {
     digitalWrite(PIN_LED_KIPAS, LOW);    // Kipas OFF
     digitalWrite(PIN_LED_ALARM, LOW);    // Alarm OFF
     aturVentilasi(VENTILASI_TUTUP);      // Ventilasi tertutup
-    digitalWrite(PIN_BUZZER,    LOW);
+    tone(PIN_BUZZER, 0);   // Buzzer mati
     updateLCD(suhu, kelembaban, "Normal. Aman!");
   }
 
