@@ -643,6 +643,7 @@ void loop() {
                    │              │
                    └──────────────┘
 ```
+<img width="1047" height="749" alt="image" src="https://github.com/user-attachments/assets/c512e3a2-cc03-4ccd-9894-537b324f8ccf" />
 
 ### 📋 Langkah-langkah Merangkai di Wokwi
 
@@ -1073,3 +1074,4 @@ Struktur video yang diharapkan:
 _Materi ini disusun untuk Mata Kuliah Internet of Things (IoT)_  
 _Program Studi Peternakan — Universitas Mulawarman_  
 _Self-Paced Learning — Pertemuan 4 — Semester Genap 2025/2026_
+
