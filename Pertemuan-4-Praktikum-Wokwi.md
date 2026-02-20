@@ -382,14 +382,10 @@ Isi tabel berikut bersama kelompok, lalu fotret/screenshot sebagai dokumentasi:
 
 > 🚨 **Jangan dilewatkan!** Tanpa langkah ini, kode tidak akan bisa dikompilasi dan akan muncul error **"ESP32Servo.h: No such file or directory"**.
 
-1. Di panel kiri Wokwi, klik ikon **"Project Files"** (ikon folder/dokumen)
-2. Klik tombol **"+"** untuk buat file baru
-3. Beri nama file: **`libraries.txt`**
-4. Isi file tersebut dengan satu baris:
-   ```
-   ESP32Servo
-   ```
-5. Simpan → Wokwi otomatis mengunduh library
+1. Di bagian atas Wokwi, klik tab **"Library Manager"**
+2. Klik tombol **"+" biru** (pojok kanan atas)
+3. Ketik **`ESP32Servo`** di kolom pencarian
+4. Klik **"Install"** → library terinstall otomatis
 
 #### Langkah 3: Tambahkan Komponen
 
@@ -696,16 +692,14 @@ void loop() {
 
 #### Langkah 2: ⚠️ Install Library (WAJIB!)
 
-> 🚨 **Praktik 3 menggunakan 2 library eksternal.** Keduanya harus ditambahkan sebelum kode bisa berjalan.
+> 🚨 **Jangan dilewatkan!** Praktik 3 menggunakan 2 library eksternal. Keduanya harus diinstall sebelum kode bisa berjalan.
 
-1. Di Wokwi, buka tab **Code** → klik **"+"** di bagian **"Project Files"**
-2. Buat file bernama **`libraries.txt`**
-3. Isi dengan dua baris berikut:
-   ```
-   ESP32Servo
-   LiquidCrystal I2C
-   ```
-4. Save → Wokwi otomatis mengunduh kedua library tersebut
+1. Di bagian atas Wokwi, klik tab **"Library Manager"**
+2. Klik tombol **"+" biru** (pojok kanan atas)
+3. Cari dan install **`ESP32Servo`** → klik Install
+4. Klik **"+"** lagi, cari dan install **`DHT sensor library for ESPx`** → klik Install
+
+> 💡 Setelah install, kedua library akan muncul di daftar **"Installed Libraries"** di tab Library Manager.
 
 #### Langkah 3: Tambahkan Semua Komponen
 
