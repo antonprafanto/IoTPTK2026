@@ -92,7 +92,23 @@ Sudah lupa cara pakai Wokwi? Ingat kembali:
 
 ### 🔌 Diagram Koneksi
 
-<img width="1134" height="693" alt="image" src="https://github.com/user-attachments/assets/dedb76a2-5e50-40d1-81a9-028e484260d8" />
+```
+                    ESP32
+               ┌──────────────┐
+               │              │
+DHT22          │              │
+┌────────┐     │              │
+│ VCC    ├────→│   3.3V       │
+│ DATA   ├────→│   GPIO 15    │  ← Sensor suhu/kelembaban
+│ GND    ├────→│   GND        │
+└────────┘     │              │
+               │   GPIO 2  ───→ LED Hijau  → Resistor 220Ω → GND  (Indikator Aman)
+               │   GPIO 4  ───→ LED Biru   → Resistor 220Ω → GND  (Kipas 1)
+               │   GPIO 5  ───→ LED Merah  → Resistor 220Ω → GND  (Kipas 2 / Darurat)
+               │   GPIO 18 ───→ Buzzer (+) → GND
+               │              │
+               └──────────────┘
+```
 
 ### 📋 Langkah-langkah Merangkai di Wokwi
 
@@ -332,7 +348,40 @@ Isi tabel berikut bersama kelompok, lalu fotret/screenshot sebagai dokumentasi:
 
 ### 🔌 Diagram Koneksi
 
-<img width="1054" height="678" alt="image" src="https://github.com/user-attachments/assets/e521f674-faf3-4d3f-a097-802d8f02ecd8" />
+```
+                    ESP32
+               ┌──────────────┐
+               │              │
+DHT22          │              │
+┌────────┐     │              │
+│ VCC    ├────→│   3.3V       │
+│ DATA   ├────→│   GPIO 15    │  ← Sensor suhu/kelembaban
+│ GND    ├────→│   GND        │
+└────────┘     │              │
+               │              │
+Servo (SG90)   │              │
+┌────────┐     │              │
+│ Merah  ├────→│   5V (VIN)   │  ← Power servo
+│ Coklat ├────→│   GND        │
+│ Oranye ├────→│   GPIO 13    │  ← Sinyal PWM servo
+└────────┘     │              │
+               │              │
+Tombol BUKA    │              │
+┌────────┐     │              │
+│ Kaki 1 ├────→│   GPIO 25    │  (+ resistor 10kΩ pull-down ke GND)
+│ Kaki 2 ├────→│   3.3V       │
+└────────┘     │              │
+               │              │
+Tombol TUTUP   │              │
+┌────────┐     │              │
+│ Kaki 1 ├────→│   GPIO 26    │  (+ resistor 10kΩ pull-down ke GND)
+│ Kaki 2 ├────→│   3.3V       │
+└────────┘     │              │
+               │   GPIO 2  ───→ LED Hijau → Resistor 220Ω → GND  (Pintu Terbuka)
+               │   GPIO 4  ───→ LED Merah → Resistor 220Ω → GND  (Pintu Tertutup)
+               │              │
+               └──────────────┘
+```
 
 ### 📋 Langkah-langkah Merangkai di Wokwi
 
@@ -647,6 +696,7 @@ void loop() {
                    │              │
                    └──────────────┘
 ```
+
 <img width="1047" height="749" alt="image" src="https://github.com/user-attachments/assets/c512e3a2-cc03-4ccd-9894-537b324f8ccf" />
 
 ### 📋 Langkah-langkah Merangkai di Wokwi
@@ -1078,4 +1128,3 @@ Struktur video yang diharapkan:
 _Materi ini disusun untuk Mata Kuliah Internet of Things (IoT)_  
 _Program Studi Peternakan — Universitas Mulawarman_  
 _Self-Paced Learning — Pertemuan 4 — Semester Genap 2025/2026_
-
