@@ -109,6 +109,7 @@ DHT22          │              │
                │              │
                └──────────────┘
 ```
+<img width="1094" height="640" alt="image" src="https://github.com/user-attachments/assets/96d69e50-d5a5-452d-be9e-593416b38e15" />
 
 ### 📋 Langkah-langkah Merangkai di Wokwi
 
@@ -382,6 +383,7 @@ Tombol TUTUP   │              │
                │              │
                └──────────────┘
 ```
+<img width="1199" height="749" alt="image" src="https://github.com/user-attachments/assets/2d2b1c6d-2f2b-4435-9803-5212e2b2982a" />
 
 ### 📋 Langkah-langkah Merangkai di Wokwi
 
@@ -1128,3 +1130,4 @@ Struktur video yang diharapkan:
 _Materi ini disusun untuk Mata Kuliah Internet of Things (IoT)_  
 _Program Studi Peternakan — Universitas Mulawarman_  
 _Self-Paced Learning — Pertemuan 4 — Semester Genap 2025/2026_
+
