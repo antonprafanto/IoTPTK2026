@@ -116,7 +116,15 @@ Sudah lupa cara pakai Wokwi? Ingat kembali:
 
 1. Buka **[wokwi.com](https://wokwi.com)** → **New Project** → **ESP32**
 
-#### Langkah 2: Tambahkan Komponen
+#### Langkah 2: ⚠️ Install Library DHT (WAJIB!)
+
+> 🚨 **Jangan dilewatkan!** Kode ini menggunakan library `DHTesp.h` yang harus diinstall terlebih dahulu.
+
+1. Di bagian atas Wokwi, klik tab **"Library Manager"**
+2. Klik tombol **"+" biru** (pojok kanan atas)
+3. Ketik **`DHT sensor library for ESPx`** → klik **Install**
+
+#### Langkah 3: Tambahkan Komponen
 
 1. Klik **"+"** lalu tambahkan satu per satu:
    - **DHT22** (ketik "dht22")
@@ -124,7 +132,7 @@ Sudah lupa cara pakai Wokwi? Ingat kembali:
    - **Resistor** × 3 buah (nilai: **220Ω**)
    - **Buzzer** (ketik "buzzer")
 
-#### Langkah 3: Sambungkan Kabel
+#### Langkah 4: Sambungkan Kabel
 
 Sambungkan sesuai diagram koneksi di atas. Pastikan:
 
@@ -134,7 +142,7 @@ Sambungkan sesuai diagram koneksi di atas. Pastikan:
 - LED Merah → GPIO 5 → Resistor → GND
 - Buzzer (+) → GPIO 18, Buzzer (–) → GND
 
-#### Langkah 4: Copy-Paste Kode
+#### Langkah 5: Copy-Paste Kode
 
 ### 💻 Kode Program (Copy-Paste ke Wokwi)
 
@@ -384,8 +392,8 @@ Isi tabel berikut bersama kelompok, lalu fotret/screenshot sebagai dokumentasi:
 
 1. Di bagian atas Wokwi, klik tab **"Library Manager"**
 2. Klik tombol **"+" biru** (pojok kanan atas)
-3. Ketik **`ESP32Servo`** di kolom pencarian
-4. Klik **"Install"** → library terinstall otomatis
+3. Cari dan install **`ESP32Servo`** → klik Install
+4. Klik **"+"** lagi, cari dan install **`DHT sensor library for ESPx`** → klik Install
 
 #### Langkah 3: Tambahkan Komponen
 
