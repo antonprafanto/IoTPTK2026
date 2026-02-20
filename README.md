@@ -26,6 +26,7 @@ Materi ini dirancang khusus untuk **mahasiswa peternakan** yang tidak memiliki l
 | 3         | Sensor Lingkungan Kandang                    | Anton Prafanto / Anhar | [Pertemuan-3-Sensor-Lingkungan-Kandang.md](Pertemuan-3-Sensor-Lingkungan-Kandang.md)               |
 | 3 (Lab)   | **Praktikum Sensor (Wokwi)**                 | Anton Prafanto / Anhar | [Pertemuan-3-Praktikum-Wokwi.md](Pertemuan-3-Praktikum-Wokwi.md)                                   |
 | 4         | Aktuator dan Mikrokontroler                  | Anton Prafanto / Anhar | [Pertemuan-4-Aktuator-dan-Mikrokontroler.md](Pertemuan-4-Aktuator-dan-Mikrokontroler.md)           |
+| 4 (Lab)   | **Praktikum Aktuator (Wokwi)**               | Anton Prafanto / Anhar | [Pertemuan-4-Praktikum-Wokwi.md](Pertemuan-4-Praktikum-Wokwi.md)                                   |
 | 5         | Sistem Komunikasi IoT                        | Anton Prafanto / Anhar | [Pertemuan-5-Sistem-Komunikasi-IoT.md](Pertemuan-5-Sistem-Komunikasi-IoT.md)                       |
 | 6         | Monitoring Kandang (Dashboard)               | Julinda / Yusuf        | [Pertemuan-6-Monitoring-Kandang.md](Pertemuan-6-Monitoring-Kandang.md)                             |
 | 7         | Studi Kasus IoT pada Kandang                 | Julinda / Yusuf        | [Pertemuan-7-Studi-Kasus-IoT.md](Pertemuan-7-Studi-Kasus-IoT.md)                                   |
@@ -44,16 +45,17 @@ Materi ini dirancang khusus untuk **mahasiswa peternakan** yang tidak memiliki l
 
 ### 🔧 FONDASI IoT (Pertemuan 1-7)
 
-| Pertemuan  | Fokus         | Highlight                             |
-| ---------- | ------------- | ------------------------------------- |
-| **P1**     | Pengantar IoT | Definisi, sejarah, 4 komponen utama   |
-| **P2**     | Perangkat IoT | Device, Gateway, Cloud, Aplikasi      |
-| **P3**     | Sensor        | DHT22, MQ-135, Load Cell, pH meter    |
-| **P3 Lab** | 🔬 Praktikum  | 5 proyek Wokwi (sensor + gabungan)    |
-| **P4**     | Aktuator      | Relay, motor, pompa, Arduino vs ESP32 |
-| **P5**     | Komunikasi    | WiFi, LoRa, GSM/4G, protokol MQTT     |
-| **P6**     | Monitoring    | Dashboard, visualisasi, alert system  |
-| **P7**     | Studi Kasus   | Implementasi nyata di Indonesia       |
+| Pertemuan  | Fokus         | Highlight                                    |
+| ---------- | ------------- | -------------------------------------------- |
+| **P1**     | Pengantar IoT | Definisi, sejarah, 4 komponen utama          |
+| **P2**     | Perangkat IoT | Device, Gateway, Cloud, Aplikasi             |
+| **P3**     | Sensor        | DHT22, MQ-135, Load Cell, pH meter           |
+| **P3 Lab** | 🔬 Praktikum  | 5 proyek Wokwi (sensor + gabungan)           |
+| **P4**     | Aktuator      | Relay, motor, pompa, Arduino vs ESP32        |
+| **P4 Lab** | 🔬 Praktikum  | 3 proyek Wokwi (relay, servo, smart kandang) |
+| **P5**     | Komunikasi    | WiFi, LoRa, GSM/4G, protokol MQTT            |
+| **P6**     | Monitoring    | Dashboard, visualisasi, alert system         |
+| **P7**     | Studi Kasus   | Implementasi nyata di Indonesia              |
 
 ### 🧠 AI & MACHINE LEARNING (Pertemuan 9-11)
 
@@ -105,13 +107,16 @@ Setelah mengikuti seluruh pertemuan, mahasiswa diharapkan mampu:
 
 ## 🔬 Praktikum (Hands-on)
 
-| Praktikum       | Topik                          | Platform                   | Komponen                                   |
-| --------------- | ------------------------------ | -------------------------- | ------------------------------------------ |
-| Praktik 1       | Sensor Suhu & Kelembaban       | [Wokwi](https://wokwi.com) | ESP32 + DHT22 + LED                        |
-| Praktik 2       | Sensor Gas Amonia (Simulasi)   | [Wokwi](https://wokwi.com) | ESP32 + Potentiometer + Buzzer + 3 LED     |
-| Praktik 3       | Sensor Berat Ternak (Simulasi) | [Wokwi](https://wokwi.com) | ESP32 + Potentiometer + LCD                |
-| Praktik 4       | Sensor pH Air (Simulasi)       | [Wokwi](https://wokwi.com) | ESP32 + Potentiometer + LCD + 3 LED        |
-| Proyek Gabungan | Monitoring Kandang Lengkap     | [Wokwi](https://wokwi.com) | ESP32 + DHT22 + 2 Pot + LCD + LED + Buzzer |
+| Praktikum   | Topik           | Platform                       | Komponen                   |
+| ----------- | --------------- | ------------------------------ | -------------------------- | ------------------------------------------ |
+| Pertemuan 3 | Praktik 1       | Sensor Suhu & Kelembaban       | [Wokwi](https://wokwi.com) | ESP32 + DHT22 + LED                        |
+| Pertemuan 3 | Praktik 2       | Sensor Gas Amonia (Simulasi)   | [Wokwi](https://wokwi.com) | ESP32 + Potentiometer + Buzzer + 3 LED     |
+| Pertemuan 3 | Praktik 3       | Sensor Berat Ternak (Simulasi) | [Wokwi](https://wokwi.com) | ESP32 + Potentiometer + LCD                |
+| Pertemuan 3 | Praktik 4       | Sensor pH Air (Simulasi)       | [Wokwi](https://wokwi.com) | ESP32 + Potentiometer + LCD + 3 LED        |
+| Pertemuan 3 | Proyek Gabungan | Monitoring Kandang Lengkap     | [Wokwi](https://wokwi.com) | ESP32 + DHT22 + 2 Pot + LCD + LED + Buzzer |
+| Pertemuan 4 | Praktik 1       | Relay — Kipas Otomatis Kandang | [Wokwi](https://wokwi.com) | ESP32 + DHT22 + 3 LED + Buzzer             |
+| Pertemuan 4 | Praktik 2       | Servo — Pintu Kandang Otomatis | [Wokwi](https://wokwi.com) | ESP32 + Servo + DHT22 + 2 Tombol + 2 LED   |
+| Pertemuan 4 | Praktik 3       | Smart Kandang Terintegrasi     | [Wokwi](https://wokwi.com) | ESP32 + DHT22 + Servo + LCD + Buzzer + LED |
 
 > 💡 Semua praktikum menggunakan simulator **Wokwi.com** — tidak perlu beli komponen!
 
@@ -122,9 +127,9 @@ Setelah mengikuti seluruh pertemuan, mahasiswa diharapkan mampu:
 | Aspek                 | Jumlah                 |
 | --------------------- | ---------------------- |
 | Total Pertemuan       | 15 (14 materi + 1 UTS) |
-| Praktikum Wokwi       | 5 proyek simulasi      |
-| Total Baris Materi    | ~11.000+ baris         |
-| Diagram ASCII         | 120+ diagram           |
+| Praktikum Wokwi       | 8 proyek simulasi      |
+| Total Baris Materi    | ~12.000+ baris         |
+| Diagram ASCII         | 130+ diagram           |
 | Studi Kasus Indonesia | 10+ kasus              |
 | Template Siap Pakai   | 15+ template           |
 
